@@ -12,12 +12,14 @@ As an overview, thsi `how-to` will cover:
  * I'll automate `API calls` to download the data and `parse` to a data store.
  * Then I'll manipulate/visualise the data, applying filters etc..
 
-## 1.  HTTP Requests
-#### key info
+#### Resources
 * My API key is `2fb4da01-1217-4b07-bcac-b9136697856c`
- * I'll be using the `marine observation data` product which uses the resource category field = `wxmarineobs`
- * full documentation on the API is available [here](http://www.metoffice.gov.uk/datapoint/product/marine-observations/detailed-documentation)
- * a full list of all `locationIDs` is [here](http://www.metoffice.gov.uk/datapoint/support/documentation/marineobs-sites)
+* I'll be using the `marine observation data` product which uses the resource category field = `wxmarineobs`
+* full documentation on the API is available [here](http://www.metoffice.gov.uk/datapoint/product/marine-observations/detailed-documentation)
+* a full list of all `locationIDs` is [here](http://www.metoffice.gov.uk/datapoint/support/documentation/marineobs-sites)
+* I'll follow [this blog](I'http://rapiddg.com/blog/calling-rest-api-nodejs-script) on writing `NodeJS` code to make the `HTTP requests` and dealing with the `HTTP responses`
+
+## 1.  HTTP Requests
 
 #### requesting `timestamp` capabilities:
 * syntax
