@@ -1,12 +1,20 @@
 # nodejs-beginner
 
-The objective of this repo is to learn how to make API calls using `NodeJS`.  
-The API is the `Met Office` `data point` API which provides access via an
-`Open Government Licence` to approximately 15 meterological and oceanographic
-data sets.
+The objective of this `how-to` is to learn how to make `API` calls using `NodeJS`.
 
-## API calls
- * My API key is `2fb4da01-1217-4b07-bcac-b9136697856c`
+An `Application Programmable Interface` or `API` allows a programmer to interact with a `web service`. An example `web-service` could be a public-facing database.  Another example is where software vendors write `APIs` for programmers to interact with desktop applications to automate tasks.
+
+The `API` that I'll be using is the UK `Met Office` `data point` web service which exposes hourly updated meteorological and oceanographic observational data for ~15 locations around on the north west European Atlantic margin.
+
+As an overview, thsi `how-to` will cover:
+ * making specific `HTTP requests` that request specific data, in specific formats, which comply with the `API documentation`.
+ * In response to the `HTTP resquest`, the API with provide an `HTTP response` in `JSON` format. The `JavaScript Object Notation` or `JSON` data format is widely used on the internet since it is structured and in plain, readable `ASCII` text.
+ * I'll automate `API calls` to download the data and `parse` to a data store.
+ * Then I'll manipulate/visualise the data, applying filters etc..
+
+## 1.  HTTP Requests
+#### key info
+* My API key is `2fb4da01-1217-4b07-bcac-b9136697856c`
  * I'll be using the `marine observation data` product which uses the resource category field = `wxmarineobs`
  * full documentation on the API is available [here](http://www.metoffice.gov.uk/datapoint/product/marine-observations/detailed-documentation)
  * a full list of all `locationIDs` is [here](http://www.metoffice.gov.uk/datapoint/support/documentation/marineobs-sites)
@@ -33,3 +41,5 @@ http://datapoint.metoffice.gov.uk/public/data/val/wxmarineobs/all/json/all?res=h
 `http://datapoint.metoffice.gov.uk/public/data/val/wxmarineobs/all/json/all?res=hourly&type=BuoyObs&key=<API key>`
 * example
 http://datapoint.metoffice.gov.uk/public/data/val/wxmarineobs/all/json/all?res=hourly&type=BuoyObs&key=2fb4da01-1217-4b07-bcac-b9136697856c
+
+## 2. HTTP Response
