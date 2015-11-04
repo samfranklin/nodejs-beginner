@@ -17,7 +17,7 @@ As an overview, thsi `how-to` will cover:
 * I'll be using the `marine observation data` product which uses the resource category field = `wxmarineobs`
 * full documentation on the API is available [here](http://www.metoffice.gov.uk/datapoint/product/marine-observations/detailed-documentation)
 * a full list of all `locationIDs` is [here](http://www.metoffice.gov.uk/datapoint/support/documentation/marineobs-sites)
-* I'll follow [this blog](I'http://rapiddg.com/blog/calling-rest-api-nodejs-script) on writing `NodeJS` code to make the `HTTP requests` and dealing with the `HTTP responses`
+* I'll follow [this blog](http://rapiddg.com/blog/calling-rest-api-nodejs-script) on writing `NodeJS` code to make the `HTTP requests` and dealing with the `HTTP responses`
 
 ## 1.  HTTP Requests
 
